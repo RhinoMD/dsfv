@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kontakt · DSFV</title>
+  <meta name="description" content="Kontakt Dansk Selskab for Vestibulogi.">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/site.js" defer></script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main id="indhold">
+    <section class="page-head">
+      <div class="container">
+        <h1>Kontakt</h1>
+        <p class="lead">I tilfælde af spørgsmål er du velkommen til at skrive til selskabets sekretær.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container layout-aside">
+        <div>
+          <h2 style="margin-top:0">Skriv til os</h2>
+          <form class="form" data-mailto data-subject="Henvendelse via dsfv.dk">
+            <div class="row">
+              <div><label for="k-navn">Navn</label><input id="k-navn" name="navn" required autocomplete="name"></div>
+              <div><label for="k-mail">E-mail</label><input id="k-mail" name="email" type="email" required autocomplete="email"></div>
+            </div>
+            <div><label for="k-emne">Emne</label><input id="k-emne" name="emne"></div>
+            <div><label for="k-besked">Besked</label><textarea id="k-besked" name="besked" required></textarea></div>
+            <div><button class="btn btn-primary" type="submit">Send besked</button></div>
+            <p class="form-note" aria-live="polite"></p>
+          </form>
+        </div>
+        <aside class="card">
+          <h3 style="margin-top:0">E-mail</h3>
+          <p><a href="mailto:sek@dsfv.dk">sek@dsfv.dk</a></p>
+          <h3>Abstracts til årsmødet</h3>
+          <p style="margin-bottom:0">Dan Dupont Hougaard<br><a href="mailto:d.hougaard@rn.dk">d.hougaard@rn.dk</a></p>
+        </aside>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>
